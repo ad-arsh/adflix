@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disneyp+</title>
+    <script src="https://kit.fontawesome.com/1758e1736e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="MovieInfo.css">
+</head>
+
+<body>
+    <nav>
+        <div class="back-btn"><a href="/index.html"><i class="fa-solid fa-arrow-left"
+                    style="margin-left: 10px;"></i></a></div>
+        <div class="logo"><img src="images/logo.png" alt=""></div>
+        <input type="checkbox" id="menuclick">
+        <label for="menuclick">
+            <i class="fa-solid fa-bars menubars"></i>
+        </label>
+        <ul>
+            <li><a href="/index.html"><i class="fa-solid fa-house"></i>HOME</a></li>
+            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i>SEARCH</a></li>
+            <li><a href=""><i class="fa-solid fa-star"></i>ORIGINALS</a></li>
+            <li><a href=""><i class="fa-solid fa-clapperboard"></i>MOVIES</a></li>
+            <li><a href=""><i class="fa-solid fa-tv"></i>SERIES</a></li>
+            <li><a href=""><i class="fa-solid fa-plus"></i>WATCHLIST</a></li>
+        </ul>
+        <div class="theme-changer">
+            <i class="fa-solid fa-cloud-sun gold" id="icon"></i>
+            <i class="fa-solid fa-cloud-moon dark-purple" id="icon2"></i>
+        </div>
+    </nav>
+    <br>
+    <div class="movie-details">
+        <div class="movie-image">
+            <img src="images/moviesimg/spiderman.jpg" alt="movie-image">
+            
+        </div>
+        <div class="movie-info">
+            <div class="movie-name">
+                <h4><span>MOVIE NAME :</span></h4>SPIDER-MAN 2
+            </div>
+            <div class="movie-casts">
+                <h4><span>MOVIE CASTS :</span></h4>ANDREW GARFIELD, EMMA STONE, JAMIE FOXX
+            </div>
+            <div class="movie-director">
+                <h4><span>DIRECTOR :</span></h4>MARC WEBB
+            </div>
+            <div class="movie-category">
+                <h4><span>CATEGORY :</span></h4>ACTION, ADVENTURE, SCI-FI
+            </div>
+            <div class="movie-ratings">
+                <h4><span>RATINGS :</span></h4><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i>6.6
+            </div>
+        </div>
+    </div>
+    <br>
+    <details style=" margin-left: 25px">
+        <summary style="font-family :kalam;">WATCH TRAILOR</summary>
+        <div class="trailor container-iframe" data-widget="">
+            <iframe width="942" height="530" src="https://www.youtube.com/embed/JfVOs4VSpmA" class="responsive-iframe"
+                title="SPIDER-MAN: NO WAY HOME - Official Trailer (HD)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </details>
+</body>
+<script>
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function () {
+        document.body.classList.toggle("light-theme")
+    }
+    var icon2 = document.getElementById("icon2");
+
+    icon2.onclick = function () {
+        document.body.classList.toggle("light-theme")
+    }
+</script>
+
+</html>

@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #282828;
+    font-family: poppins;
+    color: #fff;
+    padding-bottom: 100px;
+}
+
+.back-btn {
+transition: 1s;
+display: none;
+}
+
+.back-btn:hover {
+transform: rotate(360deg);
+}
+
+.back-btn a {
+transition: 0.7s;
+color: #fff;
+}
+
+.back-btn a:hover {
+color: rgb(193, 80, 80);}
+
+.logo img {
+    height: 35px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 25px;
+    margin: 10px 35px;
+    box-shadow: 10px 10px 10px #141414, -10px -10px 10px #313131;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 15px;
+    font-size: 13px;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: aqua;
+    font-size: 15px;
+}
+
+nav ul li a i {
+    margin-right: 7px;
+}
+
+#menuclick,
+.menubars {
+    display: none;
+}
+
+.first-row {
+    display: flex;
+    text-align: center;
+    box-shadow: 7px 7px 10px #1a1a1a,
+        -7px -7px 10px #2b2b2b;
+    border-radius: 4px;
+    margin: 10px;
+    border: 1px solid #534848;
+    transition: 0.5s;
+}
+
+.first-row:hover {
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.circle-image img {
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 500px;
+    margin: 10px;
+}
+
+.circle-image {
+    width: 250px;
+}
+
+.dev-info {
+width: 100%;}
+
+.dev-info h2 {
+    margin-left: 7vw;
+}
+
+.stddiv {
+    display: flex;
+    overflow-x:auto;
+    box-shadow: inset 10px 10px 10px #1a1a1a,inset -10px -10px 10px #1a1a1a;
+    margin: 0px 20px;
+}
+
+.studios {
+    min-width: 20%;
+    padding: 25px;
+}
+
+.studios img {
+    width: 100%;
+    box-shadow: 10px 10px 10px #1a1a1a,-10px -10px 10px #2b2b2b;
+    border-radius: 5px;
+}
+
+.studios img:hover {
+    box-shadow: inset 10px 10px 10px #1a1a1a,inset -10px -10px 10px #2b2b2b;
+}
+
+/* <==================WEB KIT SCROLL BAR =====================> */
+
+::-webkit-scrollbar {
+    width: 10px;
+    padding: 10px;
+}
+
+::-webkit-scrollbar-track {
+    margin: 0px 50px;
+    padding: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(blue,#282828,#282828,orange);
+    border-radius: 10px;
+    border: 1px solid rgba(62, 61, 61, 0.933);
+}
+
+.stdscroll::-webkit-scrollbar {
+    height: 10px;
+    padding: 10px;
+    width: 100px;
+}
+
+.stdscroll::-webkit-scrollbar-track {
+    background-color: #555252;
+    margin: 0px 25vw;
+    padding: 2px;
+    border: 2px solid rgb(168, 157, 157);
+    border-radius: 10px;
+}
+
+.stdscroll::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 10px;
+}
+
+/* <=====================MEDIA QUERIES========================> */
+
+@media (max-width:770px) {
+
+    .scrollleftarrownewreleases,
+    .scrollleftarrow2newreleases,
+    .scrollrightarrownewreleases {
+        display: none;
+    }
+
+    .New-Releases-Div {
+        min-width: 100%;
+    }
+
+    .menubars,
+    .back-btn {
+        display: inline;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .menubtn {
+        display: block;
+    }
+
+    nav {
+        padding-left: 10px;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 70px;
+        left: 0px;
+        opacity: 0;
+        background-color: #212121;
+        height: 0vh;
+        left: 100%;
+        width: 100vw;
+        display: block;
+        padding-top: 15px;
+        text-align: center;
+        transition: 0.6s;
+        border-radius: 10px;
+        border: 2px solid #534848;
+    }
+
+    nav ul li {
+        line-height: 45px;
+    }
+
+    #menuclick:checked~ul {
+        opacity: 1;
+        height: 100vh;
+        border: 2px solid #312a2a;
+        left: 0%;
+    }
+
+    .studios img {
+        display: block;
+        width: 150px;
+        height: auto;
+        box-shadow: 10px 10px 10px #1a1a1a, -10px -10px 10px #2b2b2b;
+        border-radius: 4px;
+    }
+}
